@@ -1308,6 +1308,10 @@
   .faq-list {
     list-style: none;
     padding: 0;
+    /* 質問の文字量が違っても箱の高さが揃うように */
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 16px;
   }
 
   .faq-item {
@@ -1316,11 +1320,6 @@
     border-left: 4px solid #2E7DD1;
     border-radius: 8px;
     padding: 18px 22px;
-    margin-bottom: 16px;
-  }
-
-  .faq-item:last-child {
-    margin-bottom: 0;
   }
 
   .faq-q,
